@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olaf's Adventures ❄</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Ol<span>❄</span>f</a>
+    <div class="nav-links">
+      <a href="index.html">Welcome</a>
+      <a href="adventures.html" class="active">My Adventures</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-emoji">🌍</span>
+    <h1>Me and my <span>adventures</span></h1>
+    <p class="subtitle">
+      Life is one big adventure — and I've had quite a few! This page is all about
+      the places I've explored, the courage it took to get there, my top tips for
+      surviving as a snowman, and some of my most famous words of wisdom. Enjoy! ✨
+    </p>
+  </section>
+
+  <div class="divider">⛄ 🌊 ⛄ 🌊 ⛄</div>
+
+
+  <!-- SECTION 1: SLIDESHOW -->
+  <div class="section">
+    <div class="section-card">
+      <h2 class="section-title">
+        <span class="icon">📸</span> My Vacation Photos
+      </h2>
+      <p style="font-size:1rem; color:#4a6580; line-height:1.7; margin-bottom:24px;">
+        People always ask me: "Olaf, where have you been?" And I say: <em>everywhere
+        wonderful!</em> Here are some of my favourite memories. Each one made my
+        little snowheart grow three sizes. 🧡
+      </p>
+
+      <div class="slideshow-wrapper">
+        <!-- Slides container -->
+        <div class="slides" id="slides">
+          <img class="slide" src="public/slideshow/41jAD3VHLOL.jpg"          alt="Olaf adventure 1" />
+          <img class="slide" src="public/slideshow/olaf-frozen-adventure3.png" alt="Olaf adventure 2" />
+          <img class="slide" src="public/slideshow/olaf-summer-sand-castle-frozen-beach-desktop-wallpaper-cover.jpg" alt="Olaf at the beach" />
+          <img class="slide" src="public/slideshow/unnamed.jpg"               alt="Olaf adventure 4" />
+          <img class="slide" src="public/slideshow/x1080.jpg"                 alt="Olaf adventure 5" />
+        </div>
+
+        <!-- Arrows -->
+        <button class="slide-arrow prev" id="prevBtn" aria-label="Previous photo">&#8592;</button>
+        <button class="slide-arrow next" id="nextBtn" aria-label="Next photo">&#8594;</button>
+
+        <!-- Dots -->
+        <div class="slide-dots" id="dots"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECTION 2: TIPS -->
+  <div class="section">
+    <div class="section-card">
+      <h2 class="section-title">
+        <span class="icon">🌡️</span> Tips on How to Not Melt
+      </h2>
+      <p style="font-size:1rem; color:#4a6580; line-height:1.7; margin-bottom:22px;">
+        Being a snowman in a warm world takes some skill. I've learned a few things
+        along the way — and I'm happy to share! You're welcome. 😄
+      </p>
+
+      <ul class="tips-list">
+        <li>
+          <span class="tip-icon">❄️</span>
+          <div>
+            <strong>Get your own personal flurry cloud.</strong>
+            Having a magical friend like Elsa really helps. She made me a little
+            snow cloud that follows me everywhere. If you don't have one, you might
+            want to start making the right friends!
+          </div>
+        </li>
+        <li>
+          <span class="tip-icon">🌲</span>
+          <div>
+            <strong>Stay in the shade whenever possible.</strong>
+            Trees are very underrated. They're cool, they're tall, and they don't
+            judge you. Find a good shady spot and hang out there on the hot days.
+          </div>
+        </li>
+        <li>
+          <span class="tip-icon">💨</span>
+          <div>
+            <strong>Always be near a breeze.</strong>
+            A cool wind can be a snowman's best friend. Position yourself near a
+            window, a fan, or a friendly dragon who promises to blow cold air.
+          </div>
+        </li>
+        <li>
+          <span class="tip-icon">🧊</span>
+          <div>
+            <strong>Carry a bucket of snow with you.</strong>
+            This one takes a little planning, but it's worth it! If you feel warm,
+            just apply some extra snow. It's like sunscreen — but better.
+          </div>
+        </li>
+        <li>
+          <span class="tip-icon">😌</span>
+          <div>
+            <strong>Stay calm and think cool thoughts.</strong>
+            Stress makes you warm. So take a breath, think of snowflakes, frozen
+            tundras, and that beautiful moment when the sky turns all white and
+            sparkly. Ahhh. Much better.
+          </div>
+        </li>
+        <li>
+          <span class="tip-icon">🤗</span>
+          <div>
+            <strong>Warm hugs in moderation.</strong>
+            I know, I know — I LOVE warm hugs. But if you're mostly made of snow,
+            it's probably wise to keep hugs brief. One second. Two, tops. Then step back.
+          </div>
+        </li>
+        <li>
+          <span class="tip-icon">⏰</span>
+          <div>
+            <strong>Visit the beach only at sunset.</strong>
+            The golden hour is magical AND less dangerous temperature-wise.
+            Plus you look absolutely great in that light. Trust me on this one.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- SECTION 3: QUOTES -->
+  <div class="section">
+    <div class="section-card">
+      <h2 class="section-title">
+        <span class="icon">💬</span> My Most Famous Quotes
+      </h2>
+      <p style="font-size:1rem; color:#4a6580; line-height:1.7; margin-bottom:24px;">
+        People seem to write down the things I say. I'm not sure why — I just talk
+        a lot. But if my words made someone smile, then that's the best thing ever!
+        Hit the button below for a surprise quote! 🎲
+      </p>
+
+      <div class="quotes-inner">
+        <div class="quote-display" id="quoteDisplay">
+          "Some people are worth melting for." 🌟
+        </div>
+        <button class="btn btn-quote" id="quoteBtn">
+          ✨ Give me another quote!
+        </button>
+        <p class="quote-hint">Each click reveals a different Olaf gem 💎</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- BACK TO PAGE 1 -->
+  <div class="page-nav">
+    <p style="font-size:1.05rem; color:#4a6580; margin-bottom:18px; font-weight:600;">
+      That's all from me for now! But I'll always be here — warm hugs waiting. 🤗
+    </p>
+    <a href="index.html" class="btn btn-secondary">← Return to Welcome page</a>
+  </div>
+
+
+  <script>
+    /* =========================================
+       SLIDESHOW
+    ========================================= */
+    const slidesEl   = document.getElementById('slides');
+    const prevBtn    = document.getElementById('prevBtn');
+    const nextBtn    = document.getElementById('nextBtn');
+    const dotsEl     = document.getElementById('dots');
+    const totalSlides = slidesEl.children.length;
+    let current      = 0;
+    let autoTimer;
+
+    // Build dots
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+      dot.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(dot);
+    }
+
+    function updateDots() {
+      document.querySelectorAll('.dot').forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    function goTo(index) {
+      current = (index + totalSlides) % totalSlides;
+      slidesEl.style.transform = `translateX(-${current * 100}%)`;
+      updateDots();
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+    prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+
+    function startTimer() {
+      autoTimer = setInterval(next, 3500);
+    }
+    function resetTimer() {
+      clearInterval(autoTimer);
+      startTimer();
+    }
+    startTimer();
+
+
+    /* =========================================
+       QUOTES ROULETTE
+    ========================================= */
+    const quotes = [
+      '"Some people are worth melting for." 🌟',
+      '"I like warm hugs!" 🤗',
+      '"Oh, I don\'t know why, but I\'ve always loved the idea of summer." ☀️',
+      '"Love is putting someone else\'s needs before yours." 💛',
+      '"An act of true love will thaw a frozen heart." ❄️',
+      '"Who\'s the funky-looking donkey over there? That\'s Sven!" 🦌',
+      '"You hesitated, so clearly you\'re not okay." 😌',
+      '"I\'m Olaf and I like warm hugs! Although, I\'ll take a regular hug." 🙌',
+      '"Hands down, this is the best day of my life. And quite possibly the last." 😅',
+      '"Why are you hanging off the earth like a bat?" 🦇',
+      '"The sky\'s awake, so I\'m awake, so we have to play!" 🌌',
+      '"I\'ve always loved the idea of summer — and now I\'m in it!" 🌺',
+    ];
+
+    let lastIndex = 0;
+    const quoteDisplay = document.getElementById('quoteDisplay');
+    const quoteBtn     = document.getElementById('quoteBtn');
+
+    quoteBtn.addEventListener('click', () => {
+      // Pick a different quote from last shown
+      let next;
+      do {
+        next = Math.floor(Math.random() * quotes.length);
+      } while (next === lastIndex && quotes.length > 1);
+      lastIndex = next;
+
+      // Fade out → update → fade in
+      quoteDisplay.classList.add('fade');
+      setTimeout(() => {
+        quoteDisplay.textContent = quotes[next];
+        quoteDisplay.classList.remove('fade');
+      }, 300);
+    });
+  </script>
+
+</body>
+</html>

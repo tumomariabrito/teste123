@@ -2,7 +2,7 @@
    OLAF'S WEBSITE — Global Styles
    ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 /* ---- Reset & Base ---- */
 *, *::before, *::after {
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   background: linear-gradient(160deg, #d0eaff 0%, #f0f8ff 60%, #fffde7 100%);
   min-height: 100vh;
   color: var(--dark-text);
@@ -65,7 +65,7 @@ body::before {
 }
 
 .navbar .logo {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Barriecito', cursive;
   font-size: 1.7rem;
   color: var(--deep-blue);
   text-decoration: none;
@@ -110,7 +110,7 @@ body::before {
 }
 
 .hero h1 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Barriecito', cursive;
   font-size: clamp(2.8rem, 7vw, 5rem);
   color: var(--deep-blue);
   line-height: 1.1;
@@ -136,7 +136,7 @@ body::before {
   display: inline-block;
   padding: 14px 34px;
   border-radius: 50px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Barriecito', cursive;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -199,7 +199,7 @@ body::before {
 }
 
 .section-title {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Barriecito', cursive;
   font-size: 1.9rem;
   color: var(--deep-blue);
   margin-bottom: 20px;
@@ -228,7 +228,7 @@ body::before {
 }
 
 .about-item h3 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Barriecito', cursive;
   font-size: 1.1rem;
   color: var(--deep-blue);
   margin-bottom: 8px;
@@ -363,7 +363,7 @@ body::before {
   border-radius: 12px;
   padding: 24px 32px;
   margin-bottom: 24px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Barriecito', cursive;
   font-size: 1.25rem;
   color: var(--deep-blue);
   line-height: 1.5;

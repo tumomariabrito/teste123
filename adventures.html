@@ -8,15 +8,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">Ol<span>❄</span>f</a>
-    <div class="nav-links">
-      <a href="index.html">Welcome</a>
-      <a href="adventures.html" class="active">My Adventures</a>
-    </div>
-  </nav>
-
   <!-- HERO -->
   <section class="hero">
     <span class="hero-emoji">🌍</span>
@@ -159,6 +150,11 @@
           ✨ Give me another quote!
         </button>
         <p class="quote-hint">Each click reveals a different Olaf gem 💎</p>
+
+        <div class="quote-history" id="quoteHistory">
+          <h3 class="quote-history-title">🕰️ Recent Quotes</h3>
+          <ol class="quote-history-list" id="quoteHistoryList"></ol>
+        </div>
       </div>
     </div>
   </div>
@@ -241,8 +237,24 @@
     ];
 
     let lastIndex = 0;
-    const quoteDisplay = document.getElementById('quoteDisplay');
-    const quoteBtn     = document.getElementById('quoteBtn');
+    const quoteDisplay     = document.getElementById('quoteDisplay');
+    const quoteBtn         = document.getElementById('quoteBtn');
+    const quoteHistoryList = document.getElementById('quoteHistoryList');
+    const quoteHistory     = document.getElementById('quoteHistory');
+    const historyItems     = [];
+
+    function updateHistoryList() {
+      quoteHistoryList.innerHTML = '';
+      historyItems.forEach(text => {
+        const li = document.createElement('li');
+        li.textContent = text;
+        quoteHistoryList.appendChild(li);
+      });
+      quoteHistory.style.display = historyItems.length > 0 ? 'block' : 'none';
+    }
+
+    // Hide history section until there's something to show
+    quoteHistory.style.display = 'none';
 
     quoteBtn.addEventListener('click', () => {
       // Pick a different quote from last shown
@@ -250,6 +262,13 @@
       do {
         next = Math.floor(Math.random() * quotes.length);
       } while (next === lastIndex && quotes.length > 1);
+
+      // Add currently displayed quote to history before replacing it
+      const current = quoteDisplay.textContent.trim();
+      historyItems.unshift(current);
+      if (historyItems.length > 3) historyItems.pop();
+      updateHistoryList();
+
       lastIndex = next;
 
       // Fade out → update → fade in

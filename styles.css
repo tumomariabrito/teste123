@@ -118,56 +118,6 @@ body::before {
   white-space: nowrap;
 }
 
-/* ---- Navigation Bar ---- */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 40px;
-  background: rgba(255, 255, 255, 0.68);
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
-  border-bottom: 1px solid rgba(96, 165, 250, 0.35);
-  box-shadow: 0 2px 24px rgba(30, 64, 175, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.navbar .logo {
-  font-family: 'Barriecito', cursive;
-  font-size: 1.8rem;
-  background: linear-gradient(135deg, #1e40af, #38bdf8, #818cf8, #ec4899, #fb923c);
-  background-size: 300% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-decoration: none;
-  letter-spacing: 1px;
-  animation: shimmer 4s linear infinite;
-}
-
-
-.nav-links a {
-  text-decoration: none;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--royal-blue), var(--cobalt));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-left: 24px;
-  font-size: 1rem;
-  transition: all 0.2s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  background: linear-gradient(135deg, var(--carrot), var(--sunset-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 /* ---- Hero Section ---- */
 .hero {
   display: flex;
@@ -458,7 +408,6 @@ body::before {
 @media (max-width: 600px) {
   .about-grid { grid-template-columns: 1fr; }
   .section-card { padding: 28px 22px; }
-  .navbar { padding: 12px 18px; }
 }
 
 /* ---- Slideshow ---- */
@@ -613,6 +562,37 @@ body::before {
   font-size: 0.88rem;
   color: #5b7fa6;
   margin-top: 12px;
+}
+
+.quote-history {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.quote-history-title {
+  font-size: 1rem;
+  color: #1e3a5f;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.quote-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quote-history-list li {
+  background: rgba(219,234,254,0.5);
+  border-left: 3px solid #7dd3fc;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.93rem;
+  color: #4a6580;
+  line-height: 1.5;
 }
 
 /* ---- Page footer nav ---- */
